@@ -16,16 +16,16 @@ namespace University
 
     public class Group
     {
-        private List<MyLinkedList.Person> students;
+        private List<Person> students;
         private GroupNames groupName;
 
-        public Group(GroupNames name, List<MyLinkedList.Person> students)
+        public Group(GroupNames name, List<Person> students)
         {
             groupName = name;
             this.students = students;
 
         }
-        public void Add(MyLinkedList.Person student)
+        public void Add(Person student)
         {
             students.Add(student);
         }
@@ -35,7 +35,7 @@ namespace University
             get { return groupName; }
             set { groupName = value; }
         }
-        public List<MyLinkedList.Person> Students
+        public List<Person> Students
         {
             get { return students; }
             set { students = value; }
